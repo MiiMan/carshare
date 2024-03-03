@@ -1,7 +1,7 @@
 import 'package:carshare/presentation/login_page/login_page_viewmodel.dart';
 import 'package:carshare/presentation/themes.dart';
-import 'package:carshare/telegram/telegram_api.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_telegram_web_app/flutter_telegram_web_app.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -24,8 +24,6 @@ class _LoginPageState extends State<LoginPage> {
         viewModel.page.value,
         duration: const Duration(milliseconds: 100),
         curve: Curves.easeIn));
-
-    TelegramWebApp.expand();
   }
 
   @override
@@ -137,7 +135,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Center(
                               child: Text("ВОЙТИ", style: TextStyle(fontWeight: FontWeight.w700, color: theme.background100, fontSize: 14),),
                             ),
-                            onTap: () {viewModel.page.value = 1; TelegramWebApp.hapticFeedback.impactOccurred(ImpactOccurred.medium);},
+                            onTap: () {viewModel.page.value = 1;},
                           ),
                         )
                       ),
@@ -178,7 +176,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Center(
                               child: Text("ЗАКРЫТЬ", style: TextStyle(fontWeight: FontWeight.w700, color: theme.background100, fontSize: 14),),
                             ),
-                            onTap: () {TelegramWebApp.close();},
+                            onTap: () {},
                           ),
                         )
                     ),

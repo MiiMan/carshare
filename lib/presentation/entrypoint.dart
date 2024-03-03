@@ -1,7 +1,6 @@
 import 'package:carshare/main.dart';
 import 'package:carshare/presentation/login_page/login_page.dart';
 import 'package:carshare/presentation/themes.dart';
-import 'package:carshare/telegram/telegram_api.dart';
 import 'package:flutter/material.dart';
 
 class Entrypoint extends StatelessWidget {

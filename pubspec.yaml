@@ -39,6 +39,7 @@ dependencies:
   theme_extensions_generator: ^1.0.0
   local_hero: ^0.3.0
   flutter_native_splash: 2.2.17
+  flutter_telegram_web_app: ^0.0.1
 
 dev_dependencies:
   flutter_test:
