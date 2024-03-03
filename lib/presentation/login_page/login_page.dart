@@ -42,6 +42,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: theme.semiaccent100,
       body: PageView(
         controller: pageController,
+        physics: NeverScrollableScrollPhysics(),
         children: [
           Padding(
             padding: EdgeInsets.all(40),
@@ -136,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Center(
                               child: Text("ВОЙТИ", style: TextStyle(fontWeight: FontWeight.w700, color: theme.background100, fontSize: 14),),
                             ),
-                            onTap: () {viewModel.page.value = 1;},
+                            onTap: () {viewModel.page.value = 1; TelegramWebApp.hapticFeedback.impactOccurred(ImpactOccurred.medium);},
                           ),
                         )
                       ),
