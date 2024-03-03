@@ -33,7 +33,7 @@ class Entrypoint extends StatelessWidget {
             accent30: TelegramWebApp.themeParams.buttonColor,
             semiaccent100: TelegramWebApp.themeParams.bgColor,
             semiaccent80: TelegramWebApp.themeParams.hintColor,
-            foreground: TelegramWebApp.themeParams.secondaryBgColor!) : standartTheme )
+            foreground: TelegramWebApp.themeParams.secondaryBgColor ?? TelegramWebApp.themeParams.bgColor) : standartTheme )
       ]),
       routes: {
         'login' : (_) => const LoginPage(),
