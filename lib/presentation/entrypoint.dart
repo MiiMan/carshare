@@ -24,16 +24,7 @@ class Entrypoint extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(extensions: [
-        ThemesExtension(isTelegram ? Themes(
-            background100: TelegramWebApp.themeParams.textColor,
-            background80:  TelegramWebApp.themeParams.bgColor,
-            background50:  TelegramWebApp.themeParams.bgColor,
-            accent100: TelegramWebApp.themeParams.buttonColor,
-            accent70: TelegramWebApp.themeParams.buttonColor,
-            accent30: TelegramWebApp.themeParams.buttonColor,
-            semiaccent100: TelegramWebApp.themeParams.bgColor,
-            semiaccent80: TelegramWebApp.themeParams.hintColor,
-            foreground: TelegramWebApp.themeParams.secondaryBgColor ?? TelegramWebApp.themeParams.bgColor) : standartTheme )
+        ThemesExtension(standartTheme )
       ]),
       routes: {
         'login' : (_) => const LoginPage(),
