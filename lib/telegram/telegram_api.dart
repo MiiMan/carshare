@@ -257,6 +257,7 @@ class JSTelegramWebApp {
 
 
   external static void Function() get expand;
+  external static void Function() get close;
 }
 
 class MainButtonOptions {
@@ -381,6 +382,7 @@ class TelegramWebApp {
   static final HapticFeedback hapticFeedback = HapticFeedback._(JSTelegramWebApp.hapticFeedback);
 
   static void Function() get expand => JSTelegramWebApp.expand;
+  static void Function() get close => JSTelegramWebApp.close;
   static void Function()? get enableClosingConfirmation => JSTelegramWebApp.enableClosingConfirmation;
   static void Function()? get disableClosingConfirmation => JSTelegramWebApp.disableClosingConfirmation;
   static void openLink(String url, [tryInstantView = true]) => JSTelegramWebApp.openLink(url, JSOpenLinkOptions(try_instant_view: tryInstantView));

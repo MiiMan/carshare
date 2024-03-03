@@ -1,5 +1,6 @@
 import 'package:carshare/presentation/login_page/login_page_viewmodel.dart';
 import 'package:carshare/presentation/themes.dart';
+import 'package:carshare/telegram/telegram_api.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -23,6 +24,8 @@ class _LoginPageState extends State<LoginPage> {
         viewModel.page.value,
         duration: const Duration(milliseconds: 100),
         curve: Curves.easeIn));
+
+    TelegramWebApp.expand();
   }
 
   @override
@@ -174,7 +177,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Center(
                               child: Text("ЗАКРЫТЬ", style: TextStyle(fontWeight: FontWeight.w700, color: theme.background100, fontSize: 14),),
                             ),
-                            onTap: () {viewModel.page.value = 1;},
+                            onTap: () {TelegramWebApp.close();},
                           ),
                         )
                     ),
