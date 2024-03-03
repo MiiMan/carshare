@@ -39,27 +39,7 @@
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="splash/splash.js"></script>
-  <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
   <link rel="stylesheet" type="text/css" href="splash/style.css">
-  <script>
-    function getCSSRule(ruleName) {
-      ruleName = ruleName.toLowerCase();
-      var result = null;
-      var find = Array.prototype.find;
-
-      find.call(document.styleSheets, styleSheet => {
-          result = find.call(styleSheet.cssRules, cssRule => {
-              return cssRule instanceof CSSStyleRule
-                  && cssRule.selectorText.toLowerCase() == ruleName;
-          });
-          return result != null;
-      });
-      return result;
-    }
-
-    var header = getCSSRule('body');
-    header.style.backgroundColor = window.Telegram.WebApp.backgroundColor;
-  </script>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 </head>
 <body>  <picture id="splash">

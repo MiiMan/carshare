@@ -1,7 +1,7 @@
 import 'package:carshare/presentation/login_page/login_page_viewmodel.dart';
 import 'package:carshare/presentation/themes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_telegram_web_app/flutter_telegram_web_app.dart';
+import 'package:flutter_telegram_web_app/flutter_telegram_web_app.dart' as tg;
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
