@@ -5,9 +5,5 @@ import 'package:flutter/material.dart';
 
 bool isTelegram = false;
 void main() {
-
-  if (TelegramWebApp.initData != '') {
-    isTelegram = true;
-  }
   runApp(Entrypoint());
 }
